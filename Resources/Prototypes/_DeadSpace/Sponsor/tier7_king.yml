@@ -38,7 +38,7 @@
       - id: JukeboxMK
       - id: TapeRecorderr
       - id: TapeEmpty
-        amount: 7
+        amount: 1
 
 - type: sponsorLoadout
   id: ClothingBackpackTier7HOSIAASponsorLoadout

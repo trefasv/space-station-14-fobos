@@ -30,7 +30,7 @@
       - id: ToySword
       - id: WeaponDisablerToySponsor
       - id: TapeEmpty
-        amount: 6
+        amount: 1
 
 - type: entity
   name: продвинутая аптечка первой помощи

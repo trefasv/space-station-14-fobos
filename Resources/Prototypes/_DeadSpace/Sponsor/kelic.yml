@@ -40,7 +40,7 @@
       - id: MedkitFilled
       - id: SynthesizerInstrument
       - id: TapeEmpty
-        amount: 6
+        amount: 1
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
 
