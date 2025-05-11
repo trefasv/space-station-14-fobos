@@ -20,9 +20,6 @@
       - id: ClothingHandsWatchDivine
       - id: ClothingMaskSkull
       - id: ClothingOuterHoodiePink
-      - id: ClothingNeckWingsBlackVampire
-      - id: ClothingNeckWingsPegas
-      - id: ClothingNeckWingsSkeletonRed
       - id: ClothingOuterWizard
       - id: ClothingHeadHatWizardFake
       - id: BedsheetWiz
@@ -39,6 +36,10 @@
       - id: ClothingOuterBlueTrenchSponsor
       - id: ClothingNeckCloakGreyFox
       - id: ClothingNeckCloakRedGeytide
+      - id: JukeboxMK
+      - id: TapeRecorderr
+      - id: TapeEmpty
+        amount: 5
 
 - type: sponsorLoadout
   id: ClothingBackpackTier6HOSIAASponsorLoadout

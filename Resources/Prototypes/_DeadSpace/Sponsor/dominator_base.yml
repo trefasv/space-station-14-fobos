@@ -29,6 +29,8 @@
       - id: ClothingUnderSocksDominator
       - id: ToySword
       - id: WeaponDisablerToySponsor
+      - id: TapeEmpty
+        amount: 6
 
 - type: entity
   name: продвинутая аптечка первой помощи

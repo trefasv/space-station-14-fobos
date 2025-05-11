@@ -39,6 +39,8 @@
       - id: ClothingMaskGasKelic
       - id: MedkitFilled
       - id: SynthesizerInstrument
+      - id: TapeEmpty
+        amount: 6
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
 

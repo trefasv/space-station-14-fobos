@@ -34,6 +34,10 @@
       - id: ClothingCloakGamer
       - id: ClothingNeckWingsViolet
       - id: ClothingOuterWinterKirasCloak
+      - id: JukeboxMK
+      - id: TapeRecorderr
+      - id: TapeEmpty
+        amount: 3
 
 - type: sponsorLoadout
   id: ClothingBackpackTier5HOSIAASponsorLoadout
