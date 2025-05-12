@@ -1,4 +1,5 @@
 using Content.Shared._MK.Jukebox;
+using Content.Shared.DeadSpace.CCCCVars;
 using Content.Shared.GameTicking;
 using Content.Shared.Physics;
 using Robust.Client.Audio;
@@ -6,6 +7,7 @@ using Robust.Client.GameObjects;
 using Robust.Client.Player;
 using Robust.Client.ResourceManagement;
 using Robust.Shared.Audio.Sources;
+using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Physics;
 using Robust.Shared.Physics.Systems;
@@ -26,6 +28,7 @@ public sealed class JukeboxSystem : EntitySystem
 
     private readonly Dictionary<WhiteJukeboxComponent, JukeboxAudio> _playingJukeboxes = new();
 
+    private const float MinimalVolume = -14f;
     private float _jukeboxVolume;
 
     public override void Initialize()
@@ -36,6 +39,8 @@ public sealed class JukeboxSystem : EntitySystem
         SubscribeNetworkEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeNetworkEvent<TickerJoinLobbyEvent>(JoinLobby);
         SubscribeNetworkEvent<JukeboxStopPlaying>(OnStopPlaying);
+
+        _cfg.OnValueChanged(CCCCVars.JukeboxMusicVolume, JukeboxVolumeChanged, true);
     }
 
     private void JukeboxVolumeChanged(float volume)
@@ -263,7 +268,7 @@ public sealed class JukeboxSystem : EntitySystem
         if (playingStream == null)
             return null;
 
-        playingStream.Volume = _jukeboxVolume;
+        playingStream.Volume = MinimalVolume + _jukeboxVolume;
         playingStream.PlaybackPosition = jukeboxComponent.PlayingSongData.PlaybackPosition;
 
         playingStream.Position = _transform.GetWorldPosition(jukebox);
