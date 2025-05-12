@@ -39,6 +39,8 @@
       - id: ClothingMaskGasKelic
       - id: MedkitFilled
       - id: SynthesizerInstrument
+      - id: JukeboxMK
+      - id: TapeRecorderr
       - id: TapeEmpty
         amount: 1
   - type: Tag

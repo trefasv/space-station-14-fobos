@@ -29,6 +29,8 @@
       - id: ClothingUnderSocksDominator
       - id: ToySword
       - id: WeaponDisablerToySponsor
+      - id: JukeboxMK
+      - id: TapeRecorderr
       - id: TapeEmpty
         amount: 1
 
