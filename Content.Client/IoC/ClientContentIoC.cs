@@ -1,3 +1,4 @@
+using Content.Client._MK.Jukebox;
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -63,6 +64,10 @@ namespace Content.Client.IoC
             collection.Register<TitleWindowManager>();
             collection.Register<JoinQueueManager>(); // Corvax-Queue
             collection.Register<DiscordAuthManager>(); // Corvax-DiscordAuth
+
+            // MK-EDIT
+            collection.Register<ClientJukeboxSongsSyncManager>();
+            // MK-EDIT
         }
     }
 }

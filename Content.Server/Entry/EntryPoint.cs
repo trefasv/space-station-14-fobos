@@ -1,3 +1,4 @@
+using Content.Server._MK.Jukebox;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -124,6 +125,10 @@ namespace Content.Server.Entry
                 _watchlistWebhookManager.Initialize();
                 IoCManager.Resolve<JobWhitelistManager>().Initialize();
                 IoCManager.Resolve<PlayerRateLimitManager>().Initialize();
+
+                // MK-EDIT
+                IoCManager.Resolve<ServerJukeboxSongsSyncManager>().Initialize();
+                // MK-EDIT
             }
         }
 

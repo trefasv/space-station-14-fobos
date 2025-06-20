@@ -309,6 +309,10 @@
     - id: PlushieSilGermanKvaSki
     - id: PlushieSilTimAkkerman
     - id: PaperLawSil
+    - id: JukeboxMK
+    - id: TapeRecorderr
+    - id: TapeEmpty
+      amount: 1
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterHardsuitSil
     requiredSlot: BACK
