@@ -25,6 +25,7 @@ using Robust.Shared.Utility;
 using Content.Shared.UserInterface;
 using Robust.Shared.Prototypes;
 using Content.Server.DeviceLinking.Systems;
+using Robust.Shared.Containers;
 
 namespace Content.Server.Shuttles.Systems;
 
@@ -42,6 +43,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
     [Dependency] private readonly UserInterfaceSystem _ui = default!;
     [Dependency] private readonly SharedContentEyeSystem _eyeSystem = default!;
     [Dependency] private readonly RadarConsoleSystem _radar = default!; // backmen
+    [Dependency] private readonly SharedContainerSystem _container = default!; // backmen
     [Dependency] private readonly DeviceLinkSystem _link = default!; // DS14
 
     private EntityQuery<MetaDataComponent> _metaQuery;
@@ -227,6 +229,10 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
             if (!_radar.CanBeSpotted(spotter, uid, radarComponent, detectable))
                 continue;
 
+            var coordinates = GetNetCoordinates(xform.Coordinates);
+            if (_container.IsEntityInContainer(uid) && _container.TryGetOuterContainer(uid, xform, out var container))
+                coordinates = GetNetCoordinates(Transform(container.Owner).Coordinates); // evil ass aghost stole the disk! Quick, light him up!
+
             var state = new DetectablePointState
             {
                 Name = detectable.RadarName,
@@ -237,7 +243,7 @@ public sealed partial class ShuttleConsoleSystem : SharedShuttleConsoleSystem
                 DetectableSize =  detectable.DetectableSize,
                 DrawType = detectable.DrawType,
 
-                Coordinates = GetNetCoordinates(xform.Coordinates),
+                Coordinates = coordinates,
                 Angle = xform.LocalRotation,
             };
 
