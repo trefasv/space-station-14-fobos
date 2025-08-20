@@ -103,6 +103,18 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpsuitSuitDark
+  name: вечерний тёмный костюм
+  description: Этот вечерний костюм в тёмном цвете олицетворяет прямоту и жёсткость. Обтягивающий пиджак и расклешенные брюки создают изысканный силуэт, а тёмный оттенок придает образу строгость. Подходит для особых вечерних событий и траурных церемоний.
+  components:
+  - type: Sprite
+    sprite: _DeadSpace/Clothing/Uniforms/Jumpsuit/suit_dark.rsi
+  - type: Clothing
+    sprite: _DeadSpace/Clothing/Uniforms/Jumpsuit/suit_dark.rsi
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpsuitSuitWaiter
   name: костюм официанта
   description: Этот костюм официанта сочетает в себе стиль и удобство. Блуза с отложным воротником и брюки с манжетами создают формальный, но легкий образ. Дополнительные детали, такие как фартук и бабочка, добавляют игривости и завершают стильный вид официанта, обслуживающего с грацией и профессионализмом.

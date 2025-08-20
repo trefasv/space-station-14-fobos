@@ -65,6 +65,7 @@
     ClothingUniformJumpskirtCasualGreen: 2
     ClothingUniformJumpsuitSuitCheckered: 4 # DS14
     ClothingUniformJumpsuitSuitTan: 4 # DS14
+    ClothingUniformJumpsuitSuitDark: 4 # DS14
     ClothingUniformJumpsuitSuitWaiter: 4 # DS14
     # DO NOT ADD MORE, USE UNIFORM DYING # DO ADD MORE, DO NOT USE UNIFORM DYING
     ClothingShoesColorBlack: 4 # DS14-value
