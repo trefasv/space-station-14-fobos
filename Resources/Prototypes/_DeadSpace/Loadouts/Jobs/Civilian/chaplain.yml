@@ -1,9 +1,10 @@
 # Медаль
 - type: loadoutEffectGroup
-  id: SecurityPilotMedal
+  id: MasterChaplainNeck
   effects:
   - !type:JobRequirementLoadoutEffect
     requirement:
       !type:RoleTimeRequirement
       role: JobChaplain
       time: 54000 # 15 hours
+

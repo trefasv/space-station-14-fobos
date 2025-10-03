@@ -57,6 +57,24 @@
   equipment:
     neck: ClothingNeckStoleChaplain
 
+- type: loadout
+  id: ClothingNeckChaplainChail
+  equipment:
+    neck: ClothingNeckChaplainChail
+
+- type: loadout
+  id: ClothingNeckChaplainChailDruid
+  equipment:
+    neck: ClothingNeckChaplainChailDruid
+
+- type: loadout
+  id: ClothingNeckChaplainChailGold
+  equipment:
+    neck: ClothingNeckChaplainChailGold
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: MasterChaplainNeck
+
 # Outer clothing
 - type: loadout
   id: ChaplainPlagueSuit
