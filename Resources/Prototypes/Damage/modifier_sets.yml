@@ -149,7 +149,7 @@
   id: Card
   coefficients:
     Slash: 2.0
-    Piercing: 0.1 # Holes easily poked through, but do little to structural integrity 
+    Piercing: 0.1 # Holes easily poked through, but do little to structural integrity
     Heat: 3.0
 
 - type: damageModifierSet
@@ -283,7 +283,7 @@
     Radiation: 0.0
     Shock: 0.8
     Bloodloss: 0.4
-    Holy: 1
+    Holy: 2
 
 - type: damageModifierSet
   id: Cockroach

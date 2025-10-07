@@ -480,6 +480,9 @@
   minLimit: 0
   loadouts:
   - ChaplainNeck
+  - ClothingNeckChaplainChail
+  - ClothingNeckChaplainChailGold
+  - ClothingNeckChaplainChailDruid
 
 - type: loadoutGroup
   id: ChaplainBible

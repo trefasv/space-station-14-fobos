@@ -116,6 +116,9 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 1.5
     baseSprintSpeed: 1.5
+  - type: Damageable
+    damageContainer: HeraldDemon
+    damageModifierSet: HeraldDemon
   - type: Herald
   - type: StunAttack
   - type: GhostRole
