@@ -56,6 +56,7 @@
     zeroVisible: true
   - type: Appearance
   - type: Item
+    size: Large
     sprite: _DeadSpace/Objects/Weapons/Guns/Smart/saidwinder1.rsi
   - type: SmartWeapon
     crosshairColor: "#9e0b00"
@@ -99,7 +100,7 @@
     - state: closed
       map: [ "closeLayer" ]
   - type: Item
-    size: Large
+    size: Ginormous
     sprite: _DeadSpace/Objects/Weapons/Guns/Smart/case_saidwinder.rsi
     inhandVisuals:
       left:
@@ -109,7 +110,7 @@
     shape:
     - 0,0,8,3
   - type: Storage
-    maxItemSize: Ginormous
+    maxItemSize: Huge
     grid:
       - 0,0,5,1
       - 0,1,5,2
